@@ -1,0 +1,112 @@
+[
+  {
+    "CSPM Executive Dashboard": [
+      {
+        "category": "Cloud Accounts",
+        "title": "total",
+        "data": [
+          {
+            "connected": 2
+          },
+          {
+            "not_connected": 2
+          }
+        ],
+        "id": 4356
+      },
+      {
+        "category": "Cloud Accounts",
+        "title": "total",
+        "data": [
+          {
+            "connected": 2
+          },
+          {
+            "not_connected": 2
+          }
+        ],
+        "id": 4356
+      },
+      {
+        "category": "cloud_account_risk_assessment",
+        "title": "total",
+        "data": [
+          {
+            "failed": 32
+          },
+          {
+            "warning": 82
+          },
+          {
+            "not_availabe": 42
+          },
+          {
+            "passed": 200
+          }
+        ],
+        "id": 7457
+      }
+    ],
+    "id": 34563
+  },
+  {
+    "CWPP Dashboard": [
+      {
+        "category": "Top 5 Namespace Specific Alerts",
+        "title": "NA",
+        "data": [],
+        "id": 5638
+      },
+      {
+        "category": "Workload Alerts",
+        "title": "NA",
+        "data": [],
+        "id": 8645
+      }
+    ],
+    "id": 53673
+  },
+  {
+    "Registry Scan": [
+      {
+        "category": "Image Risk Assessment",
+        "title": "Total Vulnerabilities",
+        "data": [
+          {
+            "critical": 50
+          },
+          {
+            "High": 80
+          },
+          {
+            "normal": 350
+          },
+          {
+            "low": 20
+          }
+        ],
+        "id": 9457
+      },
+      {
+        "category": "Image Security Issues",
+        "title": "Total Images",
+        "data": [
+          {
+            "critical": 50
+          },
+          {
+            "High": 80
+          },
+          {
+            "normal": 350
+          },
+          {
+            "low": 20
+          }
+        ],
+        "id": 7458
+      }
+    ],
+    "id": 86436
+  }
+]
