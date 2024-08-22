@@ -1,15 +1,30 @@
+import scrollStyle from "../styles/scroll.module.css";
+import { AddChart } from "./AddChart";
+import { LineChart } from "./LineChart";
+import { NoChart } from "./NoChart";
+import { RoundChart } from "./RoundChart";
+
 function ChartArticles({ data }) {
 	return (
 		<>
 			{data.map((v) => {
-				console.log({ v });
 				return (
-					<article key={v.id} className={`w-full mt-4 bg-fuchsia-800`}>
+					<article key={v.id} className={`w-full mt-2`}>
+						{console.log(v.id)}
 						<span className='font-bold'>{Object.keys(v)[0]}</span>
-						<div className='w-full h-[224px] ps-4 flex items-center justify-start gap-6 overflow-x-scroll overscroll-x-contain'>
-							{Object.values(v)[0].map((v1) => (
-								<div key={v1.id} className='w-[950px] h-8 flex-none bg-black'></div>
-							))}
+						<div
+							className={`${scrollStyle.scroll} w-full h-[200px] px-4 py-2 flex flex-nowrap items-center justify-start gap-4 overflow-x-auto`}
+						>
+							{Object.values(v)[0].map((v1, i1) => {
+								if (v1?.type === "round") {
+									return <RoundChart key={v1.id} v1={v1} />;
+								} else if (v1?.type === "line") {
+									return <LineChart key={v1.id} v1={v1} />;
+								} else {
+									return <NoChart key={i1} v1={v1} />;
+								}
+							})}
+							<AddChart />
 						</div>
 					</article>
 				);

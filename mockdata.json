@@ -2,46 +2,137 @@
   {
     "CSPM Executive Dashboard": [
       {
+        "type": "round",
         "category": "Cloud Accounts",
         "title": "total",
         "data": [
           {
-            "connected": 2
+            "connected": 30,
+            "color": "#C1876B"
           },
           {
-            "not_connected": 2
+            "connected": 2,
+            "color": "#6A5F31"
+          },
+          {
+            "connected": 2,
+            "color": "#D95030"
+          },
+          {
+            "not_connected": 2,
+            "color": "#332F2C"
+          },
+          {
+            "not_connected": 2,
+            "color": "#4C9141"
+          },
+          {
+            "not_connected": 2,
+            "color": "#E7EBDA"
+          },
+          {
+            "not_connected": 2,
+            "color": "#4A192C"
+          },
+          {
+            "not_connected": 2,
+            "color": "#686C5E"
+          },
+          {
+            "not_connected": 2,
+            "color": "#45322E"
+          },
+          {
+            "not_connected": 2,
+            "color": "#EAE6CA"
+          },
+          {
+            "not_connected": 2,
+            "color": "#F39F18"
+          },
+          {
+            "not_connected": 2,
+            "color": "#5E2129"
           }
         ],
         "id": 4356
       },
       {
+        "type": "round",
         "category": "Cloud Accounts",
         "title": "total",
         "data": [
           {
-            "connected": 2
+            "connected": 2,
+            "color": "#6C4675"
           },
           {
-            "not_connected": 2
+            "connected": 2,
+            "color": "#0A0A0A"
+          },
+          {
+            "connected": 2,
+            "color": "#C7B446"
+          },
+          {
+            "not_connected": 2,
+            "color": "#8A6642"
           }
         ],
-        "id": 4356
+        "id": 4656
       },
       {
-        "category": "cloud_account_risk_assessment",
+        "type": "round",
+        "category": "Cloud Accounts",
         "title": "total",
         "data": [
           {
-            "failed": 32
+            "connected": 2,
+            "color": "#015D52"
           },
           {
-            "warning": 82
+            "not_connected": 2,
+            "color": "#755C48"
+          }
+        ],
+        "id": 4386
+      },
+      {
+        "type": "round",
+        "category": "Cloud Accounts",
+        "title": "total",
+        "data": [
+          {
+            "connected": 2,
+            "color": "#4C514A"
           },
           {
-            "not_availabe": 42
+            "not_connected": 2,
+            "color": "#D84B20"
+          }
+        ],
+        "id": 4352
+      },
+      {
+        "type": "round",
+        "category": "Cloud Account Risk Assessment",
+        "title": "total",
+        "data": [
+          {
+            "failed": 32,
+            "color": "#D53032"
           },
           {
-            "passed": 200
+            "warning": 82,
+            "color": "#78858B"
+          },
+          {
+            "not_availabe": 42,
+            "color": "#CF3476"
+          },
+          {
+            "passed": 200,
+            "color": "#FFA420"
           }
         ],
         "id": 7457
@@ -69,39 +160,49 @@
   {
     "Registry Scan": [
       {
+        "type": "line",
         "category": "Image Risk Assessment",
         "title": "Total Vulnerabilities",
         "data": [
           {
-            "critical": 50
+            "failed": 12,
+            "color": "#FAD201"
           },
           {
-            "High": 80
+            "warning": 65,
+            "color": "#592321"
           },
           {
-            "normal": 350
+            "not_availabe": 234,
+            "color": "#AF2B1E"
           },
           {
-            "low": 20
+            "passed": 756,
+            "color": "#EFA94A"
           }
         ],
         "id": 9457
       },
       {
+        "type": "line",
         "category": "Image Security Issues",
         "title": "Total Images",
         "data": [
           {
-            "critical": 50
+            "critical": 50,
+            "color": "#FF2301"
           },
           {
-            "High": 80
+            "High": 80,
+            "color": "#922B3E"
           },
           {
-            "normal": 350
+            "normal": 350,
+            "color": "#6C7156"
           },
           {
-            "low": 20
+            "low": 20,
+            "color": "#B32428"
           }
         ],
         "id": 7458
