@@ -7,33 +7,33 @@ export const LineChart = ({ v1 }) => {
 	const gradientStops = percentages
 		.map((item, index) => {
 			const prevPercentage = percentages.slice(0, index).reduce((sum, val) => sum + val, 0);
-			console.log(prevPercentage);
 			return `${v1.data[index].color} ${prevPercentage}% ${(prevPercentage + item).toFixed(2)}%`;
 		})
 		.join(", ");
 
 	return (
-		<div className='w-[458px] h-full py-2 px-4 rounded-xl flex-none drop-shadow-md bg-white'>
+		<div className='w-[458px] h-full py-2 px-4 rounded-xl flex-none drop-shadow-md snap-start snap-always bg-white'>
 			<div className='w-full h-full flex flex-col text-xs font-bold'>
-				<span>{v1.category}</span>
+				<span>{v1.title}</span>
 				<div className='w-full h-full py-4 overflow-hidden'>
 					<div className='w-full h-full flex flex-col'>
 						<div className='w-full h-14 py-1'>
 							<div className='w-full h-full grid grid-rows-2'>
 								<div className='w-full flex justify-start items-baseline gap-2'>
-									<span className='text-base'>1470</span>
-									<span className='font-medium'>Total</span>
+									<span className='text-base'>{total}</span>
+									<span className='font-medium'>{v1.category[0].toUpperCase() + v1.category.slice(1)}</span>
 								</div>
 								<div className='w-full flex justify-center items-center'>
-									<div className='w-full h-1/2 rounded-full' style={{ background: `linear-gradient(to right, ${gradientStops})` }}>
-										{console.log(gradientStops)}
-									</div>
+									<div
+										className='w-full h-1/2 rounded-full'
+										style={{ background: `linear-gradient(to right, ${gradientStops})` }}
+									></div>
 								</div>
 							</div>
 						</div>
 						<div className={`w-full h-full flex justify-center items-center`}>
 							<ul
-								className={`${scrollStyle.scroll} w-full h-min p-4 ps-8 my-auto ${
+								className={`${scrollStyle.scrollData} w-full h-min p-4 ps-8 my-auto ${
 									v1.data.length >= 3
 										? v1.data.length > 6
 											? "grid grid-rows-2 grid-flow-col auto-cols-max gap-x-6 gap-y-1"

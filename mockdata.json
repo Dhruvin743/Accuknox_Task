@@ -2,9 +2,11 @@
   {
     "CSPM Executive Dashboard": [
       {
+        "id": 4356,
+        "display": false,
         "type": "round",
-        "category": "Cloud Accounts",
-        "title": "total",
+        "category": "total",
+        "title": "Cloud Accounts",
         "data": [
           {
             "connected": 30,
@@ -54,13 +56,14 @@
             "not_connected": 2,
             "color": "#5E2129"
           }
-        ],
-        "id": 4356
+        ]
       },
       {
+        "id": 4656,
+        "display": true,
         "type": "round",
-        "category": "Cloud Accounts",
-        "title": "total",
+        "category": "total",
+        "title": "Cloud Accounts",
         "data": [
           {
             "connected": 2,
@@ -78,13 +81,14 @@
             "not_connected": 2,
             "color": "#8A6642"
           }
-        ],
-        "id": 4656
+        ]
       },
       {
+        "id": 4386,
+        "display": true,
         "type": "round",
-        "category": "Cloud Accounts",
-        "title": "total",
+        "category": "total",
+        "title": "Cloud Accounts",
         "data": [
           {
             "connected": 2,
@@ -94,13 +98,14 @@
             "not_connected": 2,
             "color": "#755C48"
           }
-        ],
-        "id": 4386
+        ]
       },
       {
+        "id": 4352,
+        "display": true,
         "type": "round",
-        "category": "Cloud Accounts",
-        "title": "total",
+        "category": "total",
+        "title": "Cloud Accounts",
         "data": [
           {
             "connected": 2,
@@ -110,13 +115,14 @@
             "not_connected": 2,
             "color": "#D84B20"
           }
-        ],
-        "id": 4352
+        ]
       },
       {
+        "id": 7457,
+        "display": true,
         "type": "round",
-        "category": "Cloud Account Risk Assessment",
-        "title": "total",
+        "category": "total",
+        "title": "Cloud Account Risk Assessment",
         "data": [
           {
             "failed": 32,
@@ -134,8 +140,7 @@
             "passed": 200,
             "color": "#FFA420"
           }
-        ],
-        "id": 7457
+        ]
       }
     ],
     "id": 34563
@@ -143,16 +148,18 @@
   {
     "CWPP Dashboard": [
       {
-        "category": "Top 5 Namespace Specific Alerts",
-        "title": "NA",
-        "data": [],
-        "id": 5638
+        "id": 5638,
+        "display": true,
+        "category": "NA",
+        "title": "Top 5 Namespace Specific Alerts",
+        "data": []
       },
       {
-        "category": "Workload Alerts",
-        "title": "NA",
-        "data": [],
-        "id": 8645
+        "id": 8645,
+        "display": true,
+        "category": "NA",
+        "title": "Workload Alerts",
+        "data": []
       }
     ],
     "id": 53673
@@ -160,9 +167,11 @@
   {
     "Registry Scan": [
       {
+        "id": 9457,
+        "display": true,
         "type": "line",
-        "category": "Image Risk Assessment",
-        "title": "Total Vulnerabilities",
+        "category": "Total Vulnerabilities",
+        "title": "Image Risk Assessment",
         "data": [
           {
             "failed": 12,
@@ -180,13 +189,14 @@
             "passed": 756,
             "color": "#EFA94A"
           }
-        ],
-        "id": 9457
+        ]
       },
       {
+        "id": 7458,
+        "display": true,
         "type": "line",
-        "category": "Image Security Issues",
-        "title": "Total Images",
+        "category": "Total Images",
+        "title": "Image Security Issues",
         "data": [
           {
             "critical": 50,
@@ -204,8 +214,64 @@
             "low": 20,
             "color": "#B32428"
           }
-        ],
-        "id": 7458
+        ]
+      },
+      {
+        "id": 4552,
+        "display": false,
+        "type": "line",
+        "category": "total",
+        "title": "Cloud Accounts",
+        "data": [
+          {
+            "connected": 30,
+            "color": "#C1876B"
+          },
+          {
+            "connected": 2,
+            "color": "#6A5F31"
+          },
+          {
+            "connected": 2,
+            "color": "#D95030"
+          },
+          {
+            "not_connected": 2,
+            "color": "#332F2C"
+          },
+          {
+            "not_connected": 2,
+            "color": "#4C9141"
+          },
+          {
+            "not_connected": 2,
+            "color": "#E7EBDA"
+          },
+          {
+            "not_connected": 2,
+            "color": "#4A192C"
+          },
+          {
+            "not_connected": 2,
+            "color": "#686C5E"
+          },
+          {
+            "not_connected": 2,
+            "color": "#45322E"
+          },
+          {
+            "not_connected": 2,
+            "color": "#EAE6CA"
+          },
+          {
+            "not_connected": 2,
+            "color": "#F39F18"
+          },
+          {
+            "not_connected": 2,
+            "color": "#5E2129"
+          }
+        ]
       }
     ],
     "id": 86436

@@ -8,8 +8,6 @@
   height: 40px;
 }
 
-.body {}
-
 .search>form>input {
   outline-offset: 0px;
   outline: none;

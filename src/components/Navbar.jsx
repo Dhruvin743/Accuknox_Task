@@ -3,7 +3,7 @@ import { BELL_ICON, USER_ICON } from "../constant";
 
 export const Navbar = () => {
 	return (
-		<header className={`${appStyle.header} p-1`}>
+		<header className={`${appStyle.header} fixed p-1 bg-slate-100 top-0 z-10`}>
 			<nav className='w-full h-full px-6 flex justify-between'>
 				<div className='w-[45%] h-full flex items-center'>
 					<ul className='flex text-sm gap-2 text-gray-500'>

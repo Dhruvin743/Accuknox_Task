@@ -4,11 +4,19 @@
   /* scrollbar-width: thin; */
   scrollbar-width: none;
   scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 1rem;
+  scroll-padding-inline-start: 1rem;
+  scroll-padding-inline-end: 2rem;
 }
 
 .scroll>* {
   scroll-snap-align: start;
+}
+
+.scrollData {
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  overscroll-behavior-block: contain;
+  scrollbar-width: thin;
 }
 
 .roundChart {
