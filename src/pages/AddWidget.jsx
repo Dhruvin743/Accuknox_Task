@@ -14,14 +14,13 @@ export const AddWidget = () => {
 	const blurRef = useRef();
 
 	useEffect(() => {
-		console.log("in effect");
 		dispatch(categoryUpdateData(APPDATA));
 	}, []);
 
 	return (
-		<div className='z-20 flex fixed top-0 left-0' style={{ width: "100%", height: "100%" }}>
+		<div className='z-20 flex fixed top-0 left-0 min-h-screen max-h-screen' style={{ width: "100%" }}>
 			<div
-				className='w-3/5 h-full bg-stone-800/75 backdrop-blur-sm'
+				className='w-3/5 h-screen bg-stone-800/75 backdrop-blur-sm'
 				ref={blurRef}
 				onClick={(e) => {
 					if (blurRef.current === e.target) {
@@ -30,14 +29,22 @@ export const AddWidget = () => {
 					}
 				}}
 			></div>
-			<div className='w-2/5 h-full flex flex-col bg-white'>
+			<div className='w-2/5 h-screen flex flex-col bg-white'>
 				<div className='w-full h-min p-3 flex justify-between items-center text-sm font-medium text-white bg-blue-950'>
 					<span>Add Widget</span>
 					<button
 						type='button'
 						onClick={() => {
 							dispatch(categoryUpdateData(APPDATA));
-							dispatch(showWidgetPage({ ...addWidgetSlice, display: false, category: "" }));
+							dispatch(
+								showWidgetPage({
+									...addWidgetSlice,
+									display: false,
+									category: "",
+									addCategoryDisplay: false,
+									addChartDisplay: false,
+								})
+							);
 						}}
 					>
 						<img src={CLOSE_ICON} className='w-4 h-4' />
@@ -45,16 +52,16 @@ export const AddWidget = () => {
 				</div>
 				<div className='w-full h-full p-2 flex flex-col gap-2 justify-between text-sm'>
 					<span>Personalise your dashboard</span>
-					<div className='w-full h-full'>
+					<div className='w-full max-h-full flex-auto'>
 						<AddWidgetCategory categoryUpdateDataSlice={categoryUpdateDataSlice} />
 					</div>
-					<div className='w-full h-min flex justify-between'>
+					<div className='w-full h-max flex justify-between'>
 						<div className='w-max h-full'>
 							<button
 								type='button'
 								className='py-2 px-6 text-white bg-blue-950 rounded-lg'
 								onClick={() => {
-									dispatch(showWidgetPage({ ...addWidgetSlice, addChartDisplay: true }));
+									dispatch(showWidgetPage({ ...addWidgetSlice, addCategoryDisplay: false, addChartDisplay: true }));
 								}}
 							>
 								Add Chart
@@ -66,7 +73,15 @@ export const AddWidget = () => {
 								className='py-2 px-6 border-2 border-black rounded-lg'
 								onClick={() => {
 									dispatch(categoryUpdateData(APPDATA));
-									dispatch(showWidgetPage({ ...addWidgetSlice, display: false, category: "" }));
+									dispatch(
+										showWidgetPage({
+											...addWidgetSlice,
+											display: false,
+											category: "",
+											addCategoryDisplay: false,
+											addChartDisplay: false,
+										})
+									);
 								}}
 							>
 								Cancle
@@ -76,7 +91,15 @@ export const AddWidget = () => {
 								className='py-2 px-6 border-2 border-black text-white bg-black rounded-lg'
 								onClick={() => {
 									dispatch(updateAppData(categoryUpdateDataSlice));
-									dispatch(showWidgetPage({ ...addWidgetSlice, display: false, category: "" }));
+									dispatch(
+										showWidgetPage({
+											...addWidgetSlice,
+											display: false,
+											category: "",
+											addCategoryDisplay: false,
+											addChartDisplay: false,
+										})
+									);
 								}}
 							>
 								Confirm

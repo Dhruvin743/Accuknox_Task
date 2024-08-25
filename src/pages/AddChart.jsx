@@ -18,7 +18,7 @@ export const AddChart = () => {
 		let liList = [];
 		for (let i = 0; i < rowNum; i++) {
 			liList.push(
-				<li key={generateID(2)} className='w-min flex gap-5'>
+				<li key={generateID(6)} className='w-min flex gap-5'>
 					<input
 						type='text'
 						className='max-w-52 h-3 py-3 px-2 text-base rounded-md focus:shadow-sm focus:shadow-slate-700 focus:outline-none border-2 border-stone-500 bg-stone-100'
@@ -107,11 +107,16 @@ export const AddChart = () => {
 								const secondLvl = firstLvl[i].children;
 								for (let j = 0; j < secondLvl.length; j++) {
 									if (secondLvl[j].value) {
-										j &&
+										if (j) {
+											if (isNaN(secondLvl[j].value)) {
+												alert("please enter number value only in 'value'");
+												return;
+											}
 											chartF.push({
-												[secondLvl[j - 1].value]: parseInt(secondLvl[j].value),
+												[secondLvl[j - 1].value.replaceAll(" ", "_")]: parseInt(secondLvl[j].value),
 												color: getRandomColorHex(),
 											});
+										}
 									} else {
 										alert("please fill all values");
 										return;
@@ -128,6 +133,7 @@ export const AddChart = () => {
 								data: chartF,
 							});
 
+							textRef.current.value = "";
 							dispatch(
 								categoryUpdateData(
 									categoryUpdateDataSlice.map((v1) => {

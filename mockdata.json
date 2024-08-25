@@ -3,57 +3,57 @@
     "CSPM Executive Dashboard": [
       {
         "id": 4356,
-        "display": false,
-        "type": "round",
+        "display": true,
+        "type": "line",
         "category": "total",
         "title": "Cloud Accounts",
         "data": [
           {
-            "connected": 30,
+            "signatures": 30,
             "color": "#C1876B"
           },
           {
-            "connected": 2,
+            "annoys": 2,
             "color": "#6A5F31"
           },
           {
-            "connected": 2,
+            "unbale": 2,
             "color": "#D95030"
           },
           {
-            "not_connected": 2,
+            "vouchers": 2,
             "color": "#332F2C"
           },
           {
-            "not_connected": 2,
+            "flentes": 2,
             "color": "#4C9141"
           },
           {
-            "not_connected": 2,
+            "tetragonally": 2,
             "color": "#E7EBDA"
           },
           {
-            "not_connected": 2,
+            "outstunting": 2,
             "color": "#4A192C"
           },
           {
-            "not_connected": 2,
+            "wineiest": 2,
             "color": "#686C5E"
           },
           {
-            "not_connected": 2,
+            "tollgate": 2,
             "color": "#45322E"
           },
           {
-            "not_connected": 2,
+            "wadders": 2,
             "color": "#EAE6CA"
           },
           {
-            "not_connected": 2,
+            "cyclist": 2,
             "color": "#F39F18"
           },
           {
-            "not_connected": 2,
+            "gruf": 2,
             "color": "#5E2129"
           }
         ]
@@ -63,22 +63,22 @@
         "display": true,
         "type": "round",
         "category": "total",
-        "title": "Cloud Accounts",
+        "title": "Scene",
         "data": [
           {
-            "connected": 2,
+            "woodbines": 2,
             "color": "#6C4675"
           },
           {
-            "connected": 2,
+            "bare": 2,
             "color": "#0A0A0A"
           },
           {
-            "connected": 2,
+            "immunologist": 2,
             "color": "#C7B446"
           },
           {
-            "not_connected": 2,
+            "fused": 2,
             "color": "#8A6642"
           }
         ]
@@ -88,14 +88,14 @@
         "display": true,
         "type": "round",
         "category": "total",
-        "title": "Cloud Accounts",
+        "title": "Assignment",
         "data": [
           {
-            "connected": 2,
+            "dynamics": 2,
             "color": "#015D52"
           },
           {
-            "not_connected": 2,
+            "maximally": 2,
             "color": "#755C48"
           }
         ]
@@ -105,14 +105,14 @@
         "display": true,
         "type": "round",
         "category": "total",
-        "title": "Cloud Accounts",
+        "title": "Inspection",
         "data": [
           {
-            "connected": 2,
+            "asseize": 2,
             "color": "#4C514A"
           },
           {
-            "not_connected": 2,
+            "uncorruptly": 2,
             "color": "#D84B20"
           }
         ]
@@ -149,6 +149,7 @@
     "CWPP Dashboard": [
       {
         "id": 5638,
+        "type": "line",
         "display": true,
         "category": "NA",
         "title": "Top 5 Namespace Specific Alerts",
@@ -156,10 +157,16 @@
       },
       {
         "id": 8645,
+        "type": "none",
         "display": true,
-        "category": "NA",
+        "category": "total",
         "title": "Workload Alerts",
-        "data": []
+        "data": [
+          {
+            "basket": 45,
+            "color": "#4A362F"
+          }
+        ]
       }
     ],
     "id": 53673

@@ -1,7 +1,7 @@
 import appStyle from "../styles/app.module.css";
 import ChartArticles from "./ChartArticles";
 import { COOKIE_NAME, DROPMENU_ICON, MOCKDATA, REFRESH_ICON } from "../constant";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { showWidgetPage } from "../slices/addWidgetSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { updateAppData } from "../slices/updateAppDataSlice";
@@ -22,8 +22,8 @@ export const ChartContainer = () => {
 	}, []);
 
 	return (
-		<section className={`bg-slate-100 p-8`}>
-			<div className='mt-8'>
+		<section className={`w-full flex bg-slate-100 p-8 min-h-screen`}>
+			<div className='flex flex-col mt-8 w-full h-auto'>
 				<div className='h-10 p-1 flex items-center justify-between'>
 					<div className='font-bold'>CNAPP Dashboard</div>
 					<div className='w-auto h-full flex justify-end gap-4'>
@@ -40,8 +40,7 @@ export const ChartContainer = () => {
 								);
 							}}
 						>
-							<span className='w-auto h-auto my-auto'>Add Widget</span>
-							<span className='w-auto h-auto my-auto'>+</span>
+							Add Widget +
 						</button>
 						<button
 							className='aspect-square h-full border-2 border-gray-200 bg-white rounded-md flex items-center justify-center'
@@ -64,7 +63,7 @@ export const ChartContainer = () => {
 						</button>
 					</div>
 				</div>
-				<div className={`${appStyle.chartContainer} px-2`}>
+				<div className={`h-full flex flex-col px-2 relative`}>
 					<ChartArticles APPDATA={APPDATA} />
 				</div>
 			</div>

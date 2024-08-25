@@ -1,8 +1,10 @@
 import scrollStyle from "../styles/scroll.module.css";
 
 export const RoundChart = ({ v1 }) => {
-	const total = v1.data.reduce((sum, item) => sum + Object.values(item)[0], 0);
-	const percentages = v1.data.map((item) => parseFloat(((Object.values(item)[0] / total) * 100).toFixed(2)));
+	const total = v1.data.reduce((sum, item) => sum + item[Object.keys(item).find((key) => key !== "color")], 0);
+	const percentages = v1.data.map((item) =>
+		parseFloat(((item[Object.keys(item).find((key) => key !== "color")] / total) * 100).toFixed(2))
+	);
 
 	const gradientStops = percentages
 		.map((item, index) => {
@@ -37,7 +39,8 @@ export const RoundChart = ({ v1 }) => {
 											className={`w-2 h-2 absolute -left-4 rounded-sm`}
 											style={{ backgroundColor: `${v2.color}` }}
 										></div>
-										{Object.keys(v2)[0]
+										{Object.keys(v2)
+											.filter((key) => key !== "color")[0]
 											.replaceAll("_", " ")
 											.split(" ")
 											.map((keyV) => {

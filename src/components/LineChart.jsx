@@ -47,7 +47,8 @@ export const LineChart = ({ v1 }) => {
 											className={`w-2 h-2 absolute -left-4 rounded-sm`}
 											style={{ backgroundColor: `${v2.color}` }}
 										></div>
-										{Object.keys(v2)[0]
+										{Object.keys(v2)
+											.filter((key) => key !== "color")[0]
 											.replaceAll("_", " ")
 											.split(" ")
 											.map((keyV) => {

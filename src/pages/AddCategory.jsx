@@ -16,16 +16,22 @@ export const AddCategory = () => {
 			dispatch(showWidgetPage({ ...addWidgetSlice, addCategoryDisplay: false }));
 			return;
 		}
+		if (textRef.current.value === "id") {
+			alert("Category name can't be 'id'");
+			return;
+		}
 
 		let localdata = categoryUpdateDataSlice;
 		if (localdata) {
-			const tempdata = localdata.filter(
-				(v1) => Object.keys(v1)[0].toLowerCase() === textRef.current.value.toLowerCase()
+			const tempdata = localdata.filter((v1) =>
+				Object.keys(v1)
+					.find((key) => key !== "id")
+					.toLowerCase()
+					.includes(textRef.current.value.toLowerCase())
 			);
 			if (!tempdata.length) {
 				dispatch(categoryUpdateData([...localdata, { [textRef.current.value]: [], id: parseInt(generateID(5)) }]));
 				dispatch(showWidgetPage({ ...addWidgetSlice, category: textRef.current.value, addCategoryDisplay: false }));
-				alert("Category added : " + textRef.current.value);
 				textRef.current.value = "";
 				return;
 			}
@@ -36,7 +42,6 @@ export const AddCategory = () => {
 		}
 		dispatch(categoryUpdateData([{ [textRef.current.value]: [], id: parseInt(generateID(5)) }]));
 		dispatch(showWidgetPage({ ...addWidgetSlice, category: textRef.current.value, addCategoryDisplay: false }));
-		alert("Category added : " + textRef.current.value);
 		textRef.current.value = "";
 	}
 
