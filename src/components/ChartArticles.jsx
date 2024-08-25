@@ -19,7 +19,7 @@ function ChartArticles({ APPDATA }) {
 
 				// Filter the items based on the search text
 				const filteredData = v[dataKey].filter((v1) => {
-					if (v1.title.replaceAll(" ", "_").toLowerCase().includes(searchText.toLowerCase())) {
+					if (v1.title.toLowerCase().includes(searchText.toLowerCase())) {
 						console.log(v1.title);
 						return v1;
 					}
