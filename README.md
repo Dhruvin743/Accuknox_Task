@@ -1,22 +1,11 @@
-# Project Title
+# Accuknox Task
 
-One Paragraph of the project description
-
-Initially appeared on
-[gist](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2). But the page cannot open anymore so that is why I have moved it here.
-
-## Getting Started
-
-These instructions will give you a copy of the project up and running on
-your local machine for development and testing purposes. See deployment
-for notes on deploying the project on a live system.
+This project is task submission for accuknox company. in this project I have build a dashboard which shows pie charts for different category.
 
 ### Prerequisites
 
-Requirements for the software and other tools to build, test and push
-
-- [Example 1](https://www.example.com)
-- [Example 2](https://www.example.com)
+- install npm localy in your machine if not installed
+  you can download it from [here](https://nodejs.org/en)
 
 ### Installing
 
@@ -76,18 +65,33 @@ find the deployed version [here](https://accuknox-task-dhruvin-chikhaliyas-proje
 ## Demo
 
 - scroll
+  ![gif](https://github.com/Dhruvin743/Accuknox_Task/blob/ccb7625d4e051c134ad0ab9741c3954a2c5febde/public/gifs/scroll.gif)
+
 - add widget
+  ![gif](https://github.com/Dhruvin743/Accuknox_Task/blob/ccb7625d4e051c134ad0ab9741c3954a2c5febde/public/gifs/add%20widget.gif)
+
 - hide un-hide charts
+  ![gif](https://github.com/Dhruvin743/Accuknox_Task/blob/ccb7625d4e051c134ad0ab9741c3954a2c5febde/public/gifs/hide%20chart.gif)
+
 - add category
+  ![gif](https://github.com/Dhruvin743/Accuknox_Task/blob/ccb7625d4e051c134ad0ab9741c3954a2c5febde/public/gifs/add%20category.gif)
+
 - add chart
+  ![gif](https://github.com/Dhruvin743/Accuknox_Task/blob/ccb7625d4e051c134ad0ab9741c3954a2c5febde/public/gifs/add%20chart.gif)
+
 - search
+  ![gif](https://github.com/Dhruvin743/Accuknox_Task/blob/ccb7625d4e051c134ad0ab9741c3954a2c5febde/public/gifs/search.gif)
+
+## Acknowledgments
+
+- **Billie Thompson** - _Provided README Template_ -
+  [PurpleBooth](https://github.com/PurpleBooth)
 
 ## Authors
 
-[Dhruvin Chikhaliya](https://github.com/Dhruvin743)
-
-- **Billie Thompson** - _Provided README Template_ -
+[**Dhruvin Chikhaliya**](https://github.com/Dhruvin743)
 
 ## Contact me
 
-- [Linkdin]()
+- [Linkdin](https://www.linkedin.com/in/dhruvin-chikhaliya/)
+- [Email](mailto:dhruvinchikhaliya743@gmail.com)
